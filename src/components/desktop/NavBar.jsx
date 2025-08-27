@@ -131,7 +131,7 @@ function NavBar() {
         <div className="max-w-6xl mx-auto flex items-center justify-between px-2 sm:px-6 py-2 gap-2">
           {/* Logo */}
           <div className="flex items-center gap-2 cursor-pointer flex-shrink-0" onClick={() => navigate('/')}> 
-            <img src={"GOLDEN CITY LOGO.png"} alt="Logo" className="h-9 md:h-10 w-auto object-contain" />
+            <img src={"goldenNavBar.png"} alt="Logo" className="h-9 md:h-10 w-auto object-contain" />
           </div>
 
           {/* Balances & Exchange - Always Centered */}

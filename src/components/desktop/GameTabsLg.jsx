@@ -224,7 +224,7 @@ const GameTabsLg = () => {
       </div>
 
       {/* Content Area */}
-      {!user && (
+      {/* {!user && (
         <div className="flex flex-col gap-4 p-6 bg-gradient-to-r from-slate-800/50 to-slate-900/50 rounded-lg border border-yellow-400/30">
           <h1 className="text-2xl font-bold text-yellow-400">Create Guest Account</h1>
           <p className="text-sm text-white">
@@ -245,7 +245,7 @@ const GameTabsLg = () => {
             </p>
           )}
         </div>
-      )}
+      )} */}
       <div className="space-y-6">
         {/* Game Lists */}
         {type && provider && <GameList loading={loading} />}
