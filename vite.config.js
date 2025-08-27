@@ -9,6 +9,6 @@ export default defineConfig({
     react()
     ],
   build: {
-    outDir: 'F5J4_Build',
+    outDir: 'dist',
   },
 })
