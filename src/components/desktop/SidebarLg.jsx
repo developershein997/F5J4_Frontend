@@ -127,11 +127,11 @@ const SidebarLg = ({ show, onClose }) => {
                 </Link>
             ))}
           </div>
-          <div className="flex justify-center my-2">
+          {/* <div className="flex justify-center my-2">
             <a href={"https://tttgamingmm.site/TTTGaming.apk"} target='_blank' rel="noreferrer" className="inline-block text-center border border-white px-4 py-2 rounded-full text-white no-underline font-semibold hover:bg-white hover:text-gray-900 transition-colors duration-200">
               Download App
             </a>
-          </div>
+          </div> */}
 
           <button
               onClick={handleLogout}

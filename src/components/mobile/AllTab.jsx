@@ -58,7 +58,7 @@ const AllTab = () => {
     }
   };
 
-  console.log('MobileTypes',types);
+  // console.log('MobileTypes',types);
   return (
     <div className='p-3'>
       <h5>All Games</h5>

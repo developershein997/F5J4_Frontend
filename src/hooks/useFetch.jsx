@@ -12,7 +12,7 @@ const useFetch = (url) => {
         let signal = abortController.signal;
 
         setLoading(true);
-        console.log('Fetching URL:', url);
+        // console.log('Fetching URL:', url);
         
         fetch(url, {
             method: 'GET',
@@ -24,7 +24,7 @@ const useFetch = (url) => {
             signal
         })
             .then(res => {
-                console.log('Response status:', res.status, 'for URL:', url);
+                // console.log('Response status:', res.status, 'for URL:', url);
                 if(res.status === 401){
                     localStorage.removeItem('token');
                     navigate('/?type=all');
@@ -35,12 +35,12 @@ const useFetch = (url) => {
                 return res.json();
             })
             .then(data => {
-                console.log('API Response for', url, ':', data);
+                // console.log('API Response for', url, ':', data);
                 setData(data.data);
                 setLoading(false);
             })
             .catch(e => {
-                console.error('API Error for', url, ':', e.message);
+                // console.error('API Error for', url, ':', e.message);
                 setError(e.message);
                 setLoading(false);
             //   navigate('/');

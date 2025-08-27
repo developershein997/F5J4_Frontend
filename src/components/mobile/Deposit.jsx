@@ -40,6 +40,7 @@ const Deposit = () => {
     const method = "POST";
     const redirect = "/information?tab=logs&type=deposit";
     const msg = "Deposit successfully";
+    // console.log(msg);
     await inputSubmit(url, inputData, method, redirect, msg);
   };
 
@@ -68,7 +69,7 @@ const Deposit = () => {
                   <div className="flex items-center">
                     <img
                         className="rounded-lg shadow w-12 h-12 object-cover"
-                        src={"https://tttgamingmm.site" + selectedBank.image}
+                        src={"https://delightmyanmar99.pro" + selectedBank.image}
                         alt={selectedBank.payment_type}
                     />
                     <div className="ml-3">
@@ -147,7 +148,7 @@ const Deposit = () => {
                           }}
                           className="flex gap-2 bg-gray-100 hover:bg-yellow-100 cursor-pointer p-2 rounded-lg text-black items-center"
                       >
-                        <img src={"https://tttgamingmm.site" + bank.image} className="w-10 h-10 rounded-md object-cover" alt="bank" />
+                        <img src={"https://delightmyanmar99.pro" + bank.image} className="w-10 h-10 rounded-md object-cover" alt="bank" />
                         <div>
                           <p className="text-xs">{content?.wallet?.account} : {bank.account_number}</p>
                           <p className="text-xs">{content?.wallet?.account_name} : {bank.account_name}</p>

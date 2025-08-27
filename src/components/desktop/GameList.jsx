@@ -183,7 +183,7 @@ export function GameList({loading, games}) {
       </div>
       <p className="text-center text-gray-400 py-6">{content?.no_data || "No games found."}</p>
 
-      <style jsx>{`
+      <style>{`
     .scroll-container {
       display: flex;
       overflow-x: auto;
@@ -231,7 +231,7 @@ export function GameList({loading, games}) {
           <RelatedProviderLists customGameType={customGameTypes} />
         </div>
 
-        <style jsx>{`
+        <style>{`
     .scroll-container {
       display: flex;
       overflow-x: auto;

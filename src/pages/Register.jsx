@@ -188,7 +188,7 @@ const Register = ({ show, onClose }) => {
           }}>&times;</button>
         </div>
         <div className='text-center mb-3'>
-          <img src={'./images/ttt1.png'} width={150} alt="Logo" className="mx-auto mb-3" />
+          <img src={'GOLDEN CITY LOGO.png'} width={150} alt="Logo" className="mx-auto mb-3" />
           <h2 style={{ color: '#FFD700', fontWeight: 'bold' }}>{content?.auth?.register.toUpperCase()}</h2>
         </div>
 

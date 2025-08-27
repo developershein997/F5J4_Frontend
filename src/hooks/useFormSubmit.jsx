@@ -40,10 +40,11 @@ const useFormSubmit = () => {
 
       navigate(redirect);
       message.success(msg);
+
       return data; // Return the successful response data
 
     } catch (error) {
-      console.error("Error during fetch:", error);
+      // console.error("Error during fetch:", error);
       setError("An error occurred during the deposit process. Please try again.");
     } finally {
       setLoading(false); // Ensure loading state is reset

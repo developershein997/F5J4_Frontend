@@ -8,7 +8,7 @@ const Carousels = () => {
   const [current, setCurrent] = useState(0);
 
   // Debug logging
-  console.log('Carousel Debug:', { banners, user, bannersLength: banners?.length });
+  // console.log('Carousel Debug:', { banners, user, bannersLength: banners?.length });
 
   // Temporarily remove user check to see if data is being fetched
   // if (!user) return null;

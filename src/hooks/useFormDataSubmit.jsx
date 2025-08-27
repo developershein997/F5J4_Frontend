@@ -26,7 +26,7 @@ const useFormDataSubmit = () => {
       });
 
       const data = await res.json();
-      console.log(data);
+      // console.log(data);
       
 
       if (!res.ok) {
@@ -43,7 +43,7 @@ const useFormDataSubmit = () => {
       return data; // Return the successful response data
 
     } catch (error) {
-      console.error("Error during fetch:", error);
+      // console.error("Error during fetch:", error);
       setError("An error occurred during the deposit process. Please try again.");
     } finally {
       setLoading(false); // Ensure loading state is reset

@@ -27,12 +27,12 @@ const initializeEcho = (token) => {
     };
     
     // Debug: Log the exact configuration being passed to Echo
-    console.log('🔍 Echo Configuration Debug:');
-    console.log('Full Echo config:', echoConfig);
-    console.log('Broadcaster:', echoConfig.broadcaster);
-    console.log('Host:', echoConfig.host);
-    console.log('Port:', echoConfig.port);
-    console.log('Scheme:', echoConfig.scheme);
+    // console.log('🔍 Echo Configuration Debug:');
+    // console.log('Full Echo config:', echoConfig);
+    // console.log('Broadcaster:', echoConfig.broadcaster);
+    // console.log('Host:', echoConfig.host);
+    // console.log('Port:', echoConfig.port);
+    // console.log('Scheme:', echoConfig.scheme);
     
     return new Echo(echoConfig);
 };
@@ -80,13 +80,13 @@ export const ChatProvider = ({ children }) => {
     const apiBaseUrl = import.meta.env?.VITE_API_BASE_URL || 'https://delightmyanmar99.pro/api';
     
     // Debug: Log all environment variables
-    console.log('🔍 Environment Variables Debug:');
-    console.log('All env vars:', import.meta.env);
-    console.log('VITE_REVERB_APP_KEY:', import.meta.env?.VITE_REVERB_APP_KEY);
-    console.log('VITE_REVERB_HOST:', import.meta.env?.VITE_REVERB_HOST);
-    console.log('VITE_REVERB_PORT:', import.meta.env?.VITE_REVERB_PORT);
-    console.log('VITE_REVERB_SCHEME:', import.meta.env?.VITE_REVERB_SCHEME);
-    console.log('API Base URL:', apiBaseUrl);
+    // console.log('🔍 Environment Variables Debug:');
+    // console.log('All env vars:', import.meta.env);
+    // console.log('VITE_REVERB_APP_KEY:', import.meta.env?.VITE_REVERB_APP_KEY);
+    // console.log('VITE_REVERB_HOST:', import.meta.env?.VITE_REVERB_HOST);
+    // console.log('VITE_REVERB_PORT:', import.meta.env?.VITE_REVERB_PORT);
+    // console.log('VITE_REVERB_SCHEME:', import.meta.env?.VITE_REVERB_SCHEME);
+    // console.log('API Base URL:', apiBaseUrl);
 
     // Listen for token changes
     useEffect(() => {
@@ -143,7 +143,7 @@ export const ChatProvider = ({ children }) => {
         
         try {
             const url = `${apiBaseUrl}${chatConfig.endpoints.join}`;
-            console.log('Attempting to join chat at:', url);
+            // console.log('Attempting to join chat at:', url);
             
             const response = await fetch(url, {
                 method: 'POST',
